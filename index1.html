@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/mystyle1.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mx-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logoRojo-removebg-preview.png" alt="" class="logo-rojo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./Prueba2.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Documentos</a></li>
+                                <li><a class="dropdown-item" href="#">Mercancias</a></li>
+                                <li><a class="dropdown-item" href="#">Paquetes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true">Contáctenos</a>
+                        </li>
+                    </ul>
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/carritoNegro-removebg-preview.png" alt="" class="carrito"><span
+                        id="cuenta-carrito"
+                        >0</span
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+      <div class="main">
+ 
+      </div>
+      
+         <article class="main"><br>
+             <p>Cotiza envío express</p>
+             <label for="cantidad">Uso del servicio express en el último mes</label> 
+             <meter  id="cantidad" value="80" min="0" max="100" >80%</meter><br>
+             <hr class="linea-color">
+        <div class="rectangulo">
+             <form action="https://formsubmit.co/afaserna@gmail.com" method="post">
+                 <div class="container">
+                    <img src="./images/moto157-removebg-preview.png" class="img-fluid" alt="..." style="width: 200px; height: auto; border-radius: 20px;" > <br><br>   
+                     Origen: 
+                     <label for="origen">
+                         <select name="origen" id="origen">
+                             <option value="op1">Medellin</option>
+                             <option value="op1">Bogota</option>
+                             <option value="op1">Cali</option>
+                             <option value="op1">Barranquilla</option>
+                         </select>
+                     </label>
+                         </select>
+     
+                     Destino: 
+                     <label for="destino">
+                         <select name="destino" id="destino">
+                             <option value="op1">Medellin</option>
+                             <option value="op1">Bogota</option>
+                             <option value="op1">Cali</option>
+                             <option value="op1">Barranquilla</option>
+                         </select>
+                     </label><br><br>
+ 
+                    
+ 
+                 </div>   
+                 
+                  <p>Forma de pago</p>
+                     <input type="checkbox" id="opcion1" name="opcion" value="opcion1" id="miRadio">
+                     <label for="opcion1">Contado</label>
+     
+                     <input type="checkbox" id="opcion2" name="opcion2" value="opcion2" id="miRadio">
+                     <label for="opcion2">Contraentrega</label><br><br>
+ 
+                     <input type="checkbox" id="Alto" name="opcion2" value="opcion2">
+                     <label for="Contado">Este envío no es mercancia de prohibido transporte</label><br>
+                     
+                     <input type="text" id="inputTexto" name="nombre" placeholder="Alto(cm)" class="input-pequeno" style="display: none;">
+                     <input type="text" id="inputTexto1" name="nombre" placeholder="Ancho(cm)" class="input-pequeno" style="display: none;">
+                     <input type="text" id="inputTexto2" name="nombre" placeholder="Largo(cm)" class="input-pequeno" style="display: none;">
+                     <input type="text" id="inputTexto3" name="nombre" placeholder="Peso(kg)" class="input-pequeno" style="display: none;">
+                     
+                      <script>
+                            // JavaScript para mostrar y ocultar el menú en dispositivos móviles
+                            document.getElementById('toggle').addEventListener('change', function() {
+                                var menu = document.querySelector('.menu');
+                                if (this.checked) {
+                                    menu.style.display = 'block';
+                                } else {
+                                    menu.style.display = 'none';
+                                }
+                            });
+                      </script>
+                     
+ 
+                     <script>
+                         document.getElementById('Alto').addEventListener('change', function() {
+                             var inputTexto = document.getElementById('inputTexto');
+                             var inputTexto1 = document.getElementById('inputTexto1');
+                             var inputTexto2 = document.getElementById('inputTexto2');
+                             var inputTexto3 = document.getElementById('inputTexto3');
+                             
+                             if (this.checked) {
+                                 inputTexto.style.display = 'inline-block';
+                                 inputTexto1.style.display = 'inline-block';
+                                 inputTexto2.style.display = 'inline-block';
+                                 inputTexto3.style.display = 'inline-block';
+                             } else {
+                                 inputTexto.style.display = 'none';
+                                 inputTexto1.style.display = 'none';
+                                 inputTexto2.style.display = 'none';
+                                 inputTexto3.style.display = 'none';
+                                
+                             }
+                             
+                         });
+                     </script><br><br>
+                     
+                     <script>document.getElementById("miRadio").removeAttribute("checked");</script>
+
+
+                 <div class="int">
+                 
+                     <input type="submit" value="Cotizar">
+                 </div>
+             </form> 
+             </article>
+          </div>
+
+             <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="./images/docuemnto1.jpg" class="img-fluid" alt="Imagen 1" id="documento" id="espacio" >
+                    <input type="checkbox" id="opcion1" name="opcion" value="opcion1" >
+                     <label for="opcion1" id="espacio" >Documentos</label>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="./images/paquete1.jpg" class="img-fluid" alt="Imagen 2" id="paquete">
+                    <input type="checkbox" id="opcion1" name="opcion" value="opcion1" id="miRadio">
+                    <label for="opcion1">Paquetes</label>
+                  </div>
+                  
+                </div>
+              </div>
+              
+
+
+                
+             
+             <div class="position-relative m-4">
+                <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 1px;">
+                  <div class="progress-bar" style="width: 100%"></div>
+                </div>
+                <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
+               
+                <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">2</button>
+              </div>
+ 
+     </main>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <footer> 
+
+        
+        
+        <img src="./images/logoMoto-removebg-preview-removebg-preview.png" alt="" class="moto">
+
+        <a class="icon-link" href="#">
+            <img src="./images/Facebook.png" alt="" class="pie">
+            <img src="./images/th-removebg-preview.png" alt="" class="pie1">
+            <img src="./images/instagram-logo-3.png" alt="" class="pie2">
+            Facebook -  Youtube - Instagram
+           
+        </a>
+        
+        
+        
+
+    </footer>
+
+</body>
+</html>

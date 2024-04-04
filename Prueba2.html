@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TccExpress!</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <script>
+        window.onload = function() {
+            // Obtener el enlace "Nosotros"
+            var nosotrosLink = document.querySelector('nav a[href="#nosotros"]');
+            // Obtener la sección "Somos Eficientes"
+            var somosEficientesSection = document.getElementById('somos-proya');
+
+            // Obtener el enlace "Ayuda"
+            var ayudaLink = document.querySelector('nav a[href="#Servicios"]');
+            // Obtener la sección "Nuestros Servicios"
+            var serviciosSection = document.getElementById('nuestros-programas');
+
+            // Agregar el evento de clic al enlace "Nosotros"
+            nosotrosLink.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+                somosEficientesSection.scrollIntoView({ behavior: 'smooth' }); // Hacer scroll suavemente hasta la sección
+            });
+
+            // Agregar el evento de clic al enlace "Ayuda"
+            ayudaLink.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+                serviciosSection.scrollIntoView({ behavior: 'smooth' }); // Hacer scroll suavemente hasta la sección
+            });
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">TCC Express</p>
+            <nav>
+              <a href="#">¿Que es TCC Express?</a>
+              <a href="#nosotros">Nosotros</a>
+              <a href="#Servicios">Servicios</a>
+              <a href="./Trabajaconnosotros.html">Trabaja con nosotros</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <h1>TCC EXPRESS<br>TU MEJOR OPCION</h1>
+        <button>VER MAS</button>
+    </section>
+
+    <section id="somos-proya">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+                <h2>Somos <span class="color-acento"> Eficientes</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis a autem sed dignissimos commodi, voluptas incidunt voluptatibus cum, quia neque nulla consequatur laborum accusamus, perspiciatis odio nemo minus vel!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nuestros-programas">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="programas ">
+                <div class="carta">
+                    <h3>Hasta 250g</h3>
+                    <p >Servicio especializado para el envío de Documentos de hasta 250 g por unidad de empaque, a nivel nacional.</p>
+                    <a href="./index1.html"><button>+ Info</button></a>
+                </div>
+                <div class="carta">
+                    <h3>1 Hasta 8 kg</h3>
+                    <p>Envío de Paquetes de 1 a 8 kg por unidad de empaque y con una longitud máxima de 45 cm. en una (1) de sus aristas.</p>
+                    <a href="./index1.html"><button>+ Info</button></a>
+                </div>
+                <div class="carta">
+                    <h3>9 Hasta 25 kG</h3>
+                    <p>Envío de Paquetes de 9 a 25 kg por unidad de empaque y con una longitud máxima de 45 cm. en una (1) de sus aristas.</p>
+                    <a href="./index1.html"><button>+ Info</button></a>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <section id="caracteristicas">
+        <div class="container">
+            <ul>
+                <li>✔️ Envios</li>
+                <li>✔️ Rastreos</li>
+                <li>✔️ Contactanos</li>
+                <li>✔️ Servicios</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="final">
+        <h2>Que esperas para trabajar con nosotros</h2>
+        <a href="./Trabajaconnosotros.html"><button>APLICA YA</button></a>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; ProgramaYa 2021</p>
+        </div>
+    </footer>
+</body>
+</html>
